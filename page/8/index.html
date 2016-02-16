@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>第 8 頁 | 叶行骏</title>
+  <meta name="author" content="Xj Ye">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="叶行骏"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="叶行骏" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">叶行骏</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2009-01-09T16:00:00.000Z"><a href="/f2e/">2009-01-10</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/f2e/">前端开发工程师-页面重构者</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>做为一个专职的页面重构者，我们从事的工作简单的说就是&ldquo;将设计稿转换成WEB页面&rdquo;，这一过程可以很简单到直接把PSD从<acronym title="Photoshop">PS</acronym>里 导出成网页；也可复杂到需要考虑页面中每个标签的使用，考虑&ldquo;页面性能&rdquo;。以&ldquo;前端工程师&rdquo;为目标的同学可能会不愿承认将页面重构这块分出来，但随着工种 的细分，加上页面重构本身的专业性，独立为一个职业也不是不可能，至少我现在从事的就是一个专职的职位。如果你觉得一个前端工程师必须去画设计稿，可以不 理会下面的内容。<br><br><br><br>单纯的页面重构，所涉及到的工作内容一般是&ldquo;分析设计稿=&gt;切图=&gt;写<acronym title="HyperText Markup Language"><span>HTML</span></acronym>和<acronym title="Cascade Style Sheet"><span>CSS</span></acronym>&rdquo;， 虽然看起来很少，但要做好这份工作，绝非所想的那么容易。原因很简单：工作内容单一，在时间和工作量上必会很苛刻，往往跟设计师的工作时间是3:1，即设 计师给三天的时间，制作只给一天的时间完成；在这种工作强度下，很多人都是靠着对这份工作的喜爱在维持着，一旦工作热情消失，很容易就会变得枯燥，保持热 情也成了重构工作者（也许是所有参加工作的人）应该具备的能力。</p><br><p>跟&ldquo;前端工程师&rdquo;所要求的有所不同，&ldquo;页面重构&rdquo;虽然也是&ldquo;前端工程师&rdquo;的一个范畴，在职业化中，对专职的页面重构者，要求当然也更高。不单是做出页面，而是做出好页面。又引出另一个话题，&ldquo;何为好页面？&rdquo;，一般包括下面几点：</p><br><ol><br>    <li>结构完整，可通过标准验证</li><br>    <li>标签语义化，结构合理</li><br>    <li>充分考虑到页面在站点中的&ldquo;作用和重要性&rdquo;，并对其进行有针对性的优化</li><br></ol><br><p>很多同学多少都遇到过方向不明，不知道自己应该提高些什么，我们可以从&ldquo;分析设计稿=&gt;切图=&gt;写HTML和CSS&rdquo;这个工作内容，针对每一点提出一些要求，以方便我们分析自己的能力水平，为继续提高确定个方向：</p><br><h3>一，设计稿的分析</h3><br><p>设计稿的分析是指对设计稿如何制作成页面的分析，即哪一块的内容可以做为公共的部分、哪一块的内容结构可以如何实现等。对设计稿的分析能力可以划分成下面的几个阶段：</p><br><ol><br>    <li>能分清设计稿中的公共与私有的部分</li><br>    <li>在1的基础上对各部分的实现方式有一个初步的方案（包括如何切图、写结构、写样式）</li><br>    <li>在1的基础上，准确的给出各部分的实现方案（包括如何切图、写结构、写样式）</li><br>    <li>在3的基础上，能同时考虑方案的扩展性、复用性及页面性能（包括如何切图、写结构、写样式）</li><br>    <li>在4的基础上，考虑整站的结构分布（包括文件分布、目录结构）</li><br></ol><br><p>上面这些都是在还没开始动手制作之前所要做的。</p><br><h3>二，切图</h3><br><p>切图是指将设计稿切成便于制作成页面的图片。都有个误区，觉得切图就是把图片切出来，其实并不完全是这样，还包括把切出来的图片合并到一起，怎么切、从哪切才能将性能最大化，说&ldquo;切图是一门艺术&rdquo;完全不为过。切图也可以划分成几个阶段：</p><br><ol><br>    <li>切成所需要的图片（如何将需要的部分切出来）</li><br>    <li>在1的基础上，对切出来的图片进行一些优化（包括压缩文件大小、选择图片类型）</li><br>    <li>在2的基础上，规划切出来的图片（包括文件分布）</li><br>    <li>在3的基础上，考虑整体的性能（包括合并图片、压缩文件大小）</li><br></ol><br><h3>HTML和CSS的编写</h3><br><p>HTML和CSS的编写是指将上面完成的内容，通过HTML和CSS的编写，将设计稿转换成WEB页面最重要的一块，也是我们所要重点掌握的内容，把它们放在一起，是因为它们相互的关联性太强，HTML的写法会影响到CSS的写法，它又可以划分成下面几个阶段：</p><br><ol><br>    <li>还原设计稿视觉效果，并通过标准验证（HTML）</li><br>    <li>在1的基础上，实现多浏览器的兼容（HTML）</li><br>    <li>在2的基础上，标签语义化（HTML）</li><br>    <li>在3的基础上，选择较优的实现方式（包括模块化结构，方便程序脚本使用，HTML和CSS）</li><br>    <li>在4的基础上，考虑到扩展性、复用性和可维护性（HTML和CSS）</li><br>    <li>在5的基础上，考虑到整站的样式分布（包括如何实现分布）</li><br>    <li>在6的基础上，样式写法的优化（包括技巧的应用）</li><br></ol><br><p>是对所遇到问题的解决能力，这一点在不同的阶段都可能会遇到，所以没有写到上面。</p><br><p>如果你已经达到或超过3、4、5，恭喜你，你已经是一个职业的&ldquo;页面重构工作者&rdquo;了。为了我们自身的发展，关注新技术、技术创新、提高用户体验、审美观、程序脚本的实现方式等，也是十分必要的。大家一起进步吧。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2008-12-11T16:00:00.000Z"><a href="/10-ajax-javascript-effects/">2008-12-12</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/10-ajax-javascript-effects/">10种AJAX/JavaScript特效实例让你的网站更吸引人</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>今天的话题是如何改进自己网站的界面或提高网站的视觉体验，从而让用户记忆犹新。 <br><br>　　我们有三种主要的方法(从难到易):自己动手写脚本;使用类似于jQuery和mooTools的JavaScript框架(可以让编写代码变得更容易些);使用能工作于现有的JavaScript框架下的提前预置好的脚本或那种从头开始开发的创建者。这篇文章适合那些打算提高工作效率或不愿意从头开发脚本的人阅读。 <br><br>　　这里收集了10种<strong>强大</strong>的且<strong>容易上手</strong>的JavaScript特效来改进您的网页站界面，从而得到更多的用户体验。这10种javaScript特效回味你的网站带来意想不到的视觉盛宴，而且安装和使用都比较容易。 <br><br><br><br><br><br><strong><span style="color: orange">您还可以参考以下JavaScript/Ajax相关教程及资源:</span></strong> <br><br>《<a href="http://blog.bingo929.com/10-sources-ajax-javascript.html" target="_blank" closure_hashcode_="240">10个非常棒的Ajax及Javascript实例资源网站</a>》 <br><br>《<a href="http://blog.bingo929.com/12-javascript-browser-css-wrong.html" target="_blank" closure_hashcode_="241">12种Javascript解决常见浏览器兼容问题的方法</a>》 <br><br>《<a href="http://blog.bingo929.com/300-jquery-css-mootools-js-navigation-menus.html" target="_blank" closure_hashcode_="242">300+Jquery, CSS, MooTools 和 JS的导航菜单资源</a>》 <br><br>&nbsp; <br><br><strong><span style="font-size: large"><font size="4">1.</font><a href="http://orangoo.com/labs/GreyBox/" target="_blank" closure_hashcode_="243"><font size="4">GreyBox</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/greybox.jpg" alt=""> <br><br><em>　　GreyBox </em>允许你以<a href="http://javascript.about.com/library/blmodal.htm" target="_blank" closure_hashcode_="244">模式窗口</a>的形式运行其它网站(类似于弹出式窗口，但又不运行新的浏览器窗口).如果你的网站上有一些其他网站的导出链接，但你又不想让你的用户离开你的网站或不想让他们打开另一个浏览器窗口的话，这真的是一个很好的解决方案。使用GreyBox 非常简单。 <br><br><br><br>　　这里是关于GreyBox的关键页面:<a href="http://orangoo.com/labs/GreyBox/Download/" target="_blank" closure_hashcode_="245">下载页面</a>, <a href="http://orangoo.com/labs/GreyBox/Documentation/" target="_blank" closure_hashcode_="246">说明页面</a>, <a href="http://orangoo.com/labs/greybox/examples.html" target="_blank" closure_hashcode_="247">实例</a>, <a href="http://orangoo.com/labs/greybox/installation.html" target="_blank" closure_hashcode_="248">安装</a>,和 <a href="http://orangoo.com/labs/greybox/advance_usage.html" target="_blank" closure_hashcode_="249">高级用法</a>(如果你是JavaScript高手，看完这个页面中的一些技巧说明，你就能扩展它的函数库了) <br><br><br><br><br><br><strong><span style="font-size: large"><font size="4">2.</font><a href="http://www.netzgesta.de/instant/" target="_blank" closure_hashcode_="250"><font size="4">instant.js</font></a></span></strong> <br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/instant.jpg" alt=""> <br><br><em>　　instant.js </em>特效会为你的照片动态添加类似偏振(Polaroid-like)的效果(将照片倾斜并添加阴影和边框)。现在我们可以使用这个照片特效模拟Photoshop的数码照片处理了。 <br><br>　　这个脚本技术可以用于在你的网站上有很多照片，但又不想一个个手动处理的情况。（也许你会使用批量处理，但那只是建立于单一的动作下的，如调整尺寸、裁剪等&amp;#8230;） <br><br><br><br><strong><span style="font-size: large"><font size="4">3.</font><a href="http://joomlicious.com/mootable/" target="_blank" closure_hashcode_="251"><font size="4">mooTable</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/mootable.jpg" alt=""> <br><br>　　mooTable允许你为表格中的数据进行排序(不用刷新页面)，利用DOM替代数据库的请求的新式排序方法。使用简单，仅需轻微的配置即可。 <br><br>　　这个脚本库需要mooTools框架的支持，你可以在<a href="http://mootools.net/download" target="_blank" closure_hashcode_="252">这里下载</a>。你还可以在<a href="http://www.javaeye.com/mootools" target="_blank" closure_hashcode_="253">论坛中的mootools板块</a>寻找一些创建mooTable的方法，会有很多mootools开发者的反馈。 <br><br><br><br><strong><span style="font-size: large"><font size="4">4.</font><a href="http://lipidity.com/fancy-form/#example" target="_blank" closure_hashcode_="254"><font size="4">FancyForm</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/fancyform.jpg" alt=""> <br><br><em>　　FancyForm </em>可以取代单调乏味的表单控件如单选按钮和复选框。基本的使用仅需两步:(1)在页面中调用JavaScript文件 (2)为你的表单控件指定类名，如复选框指定class=&amp;#8221;checked&amp;#8221; 或 class=&amp;#8221;unchecked&amp;#8221;，单选框指定class=&amp;#8221;selected&amp;#8221; 和 class=&amp;#8221;unselected&amp;#8221;。非常不显眼的javaScript. <br><br>　　该脚本需要<a href="http://mootools.net/download" target="_blank" closure_hashcode_="255">mootools</a>的支持(版本1.1) <br><br><br><br><strong><span style="font-size: large"><font size="4">5.</font><a href="http://www.phatfusion.net/imagemenu/index.htm" target="_blank" closure_hashcode_="256"><font size="4">image menu</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/image-menu.jpg" alt=""> <br><br>　　image menu,使用phatfusion开发而成。非常漂亮的横向菜单，当你悬停在某个菜单项上时，图片就会扩展开。 <br><br>　　你可以使用这个技术为照片的隐藏部分使用蒙太奇效果，但当用户将鼠标悬停在上面是就会显示全部。 <br><br>　　该脚本需要<a href="http://mootools.net/download" target="_blank" closure_hashcode_="257">mootools</a>的支持(版本1.1) <br><br><br><br><strong><span style="font-size: large"><font size="4">6.</font><a href="http://amberjack.org/" target="_blank" closure_hashcode_="258"><font size="4">AmberJack: Site Tour Creator</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/amberjack.jpg" alt=""> <br><br>　　这是一个轻量级的<a href="http://blog.bingo929.com/category/technology/javascript" target="_blank" closure_hashcode_="259">JavaScipt</a>库，允许你为网站添加实施快速游览。允许用户事实的在浏览每个页面的时候查看简短的描述。 <br><br>　　您可以利用这个技术来演示如何让用户使用这个网站，用户只需要点击下一步的按钮，就能了解需要做的每一步。 <br><br><br><br><br><br><strong><span style="font-size: large"><font size="4">7.</font><a href="http://imageflow.finnrudolph.de/" target="_blank" closure_hashcode_="260"><font size="4">ImageFlow</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/imageflow.jpg" alt=""> <br><br>　　灵感来源于iPod的&ldquo;coverflow&rdquo;，ImageFlow是一个用来展示图片集合的特效。用户可以拖动下方的滚动条来控制图片的显示。 <br><br>　　用户点击图片以后，会转向到现实清晰大图的网页。 <br><br><br><br><strong><span style="font-size: large"><font size="4">8.</font><a href="http://mjijackson.com/shadowbox/" target="_blank" closure_hashcode_="261"><font size="4">ShadowBox.js Media viewer</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/shadowbox.jpg" alt=""> <br><br>　　ShadowBox是&amp;#8221;完全使用JavaScipt编写的跨浏览器、跨平台、代码简洁且文档完整的媒体查看应用程序&amp;#8221;(怎么样?一口气说下来这么多优点。) <br><br>　　ShadowBox区别于其它Model Box（如<a href="http://www.huddletogether.com/projects/lightbox2/" target="_blank" closure_hashcode_="262">Lightbox 2</a>）的地方是，它还支持除图片以外的很多其它文件类型，如flash视频、内嵌式youtube视频、Apple.com预告片和网页(这样能让用户不用转到另一个页面就能完成登录、注册)。这是很有价值的脚本。 <br><br><br><br><strong><span style="font-size: large"><font size="4">9.</font><a href="http://valid.tjp.hu/tjpzoom/" target="_blank" closure_hashcode_="263"><font size="4">TJPzoom 3 - image magnifier</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/tjpzoom.jpg" alt=""> <br><br><em>TJPzoom</em>可以让你将某个高清图片的局部放大显示。按下并拖动鼠标的话，可以改变放大区域的尺寸。 <br><br><br><br><strong><span style="font-size: large"><font size="4">10.</font><a href="http://demos.mootools.net/Tips" target="_blank" closure_hashcode_="264"><font size="4">mootools Tips</font></a></span> </strong><br><br><img src="http://blog.bingo929.com/wp-content/uploads/2008/12/mootools-tips.jpg" alt=""> <br><br><em>　　mootools Tips</em>是mooTools框架的一部分，它可以让你为用户提供一个高度可配置的工具提示，当用户将鼠标悬停在某个链接或图片上时，一些关于这个元素的附加的提示信息就会在屏幕上显示出来。 <br><br>　　一些可以调节的方法:<a href="http://blog.bingo929.com/category/technology/css" target="_blank" closure_hashcode_="265">CSS</a> 样式(可以修改默认的黑背景白文字)、渐变速度、工具提示在屏幕上显示的风格、你希望工具提示显示多久。这个脚本需要<a href="http://mootools.net/download" target="_blank" closure_hashcode_="266">mootools</a>框架的支持。 <br><br><br><br>英文原文:<a href="http://sixrevisions.com/rapid-development/10_ajax_effects_website_fanciness/" target="_blank" closure_hashcode_="267">10 JavaScript Effects to Boost Your Website&rsquo;s Fanciness Factor</a> <br><br>翻译原文:<a href="http://blog.bingo929.com/10-ajax-effects-website-fanciness.html" target="_blank" closure_hashcode_="268">10种JavaScript特效实例让你的网站更吸引人</a> <br><br>原载:<a href="http://blog.bingo929.com/" target="_blank" closure_hashcode_="269">彬Go</a>&mdash;&mdash;集前端开发/网页设计/网站可用性/用户体验于一体的趣味互联网生活 <br><br>&nbsp;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2008-12-05T16:00:00.000Z"><a href="/big-site/">2008-12-06</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/big-site/">大型网站架构演变和知识体系</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p class="MsoNormal"><span style="font-family: 宋体">之前也有一些介绍大型网站架构演变的文章，例如</span><span lang="EN-US">LiveJournal</span><span style="font-family: 宋体">的、</span><span lang="EN-US">ebay</span><span style="font-family: 宋体">的，都是非常值得参考的，不过感觉他们讲的更多的是每次演变的结果，而没有很详细的讲为什么需要做这样的演变，再加上近来感觉有不少同学都很难明白为什么一个网站需要那么复杂的技术，于是有了写这篇文章的想法，在这篇文章中</span> <span style="font-family: 宋体">将阐述一个普通的网站发展成大型网站过程中的一种较为典型的架构演变历程和所需掌握的知识体系，希望能给想从事互联网行业的同学一点初步的概念，</span><span lang="EN-US">:)</span><span style="font-family: 宋体">，文中的不对之处也请各位多给点建议，让本文真正起到抛砖引玉的效果。</span><span lang="EN-US"><br><br>&lt;!–[if !supportLineBreakNewLine]–&gt;<br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 宋体">架构演变第一步：物理分离</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">和数据库</span></span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">最开始，由于某些想法，于是在互联网上搭建了一个网站，这个时候甚至有可能主机都是租借的，但由于这篇文章我们只关注架构的演变历程，因此就假设这个时候</span> <span style="font-family: 宋体">已经是托管了一台主机，并且有一定的带宽了，这个时候由于网站具备了一定的特色，吸引了部分人访问，逐渐你发现系统的压力越来越高，响应速度越来越慢，而这个时候比较明显的是数据库和应用互相影响，应用出问题了，数据库也很容易出现问题，而数据库出问题的时候，应用也容易出问题，于是进入了第一步演变阶段：将应用和数据库从物理上分离，变成了两台机器，这个时候技术上没有什么新的要求，但你发现确实起到效果了，系统又恢复到以前的响应速度了，并且支撑住了更高的流量，并且不会因为数据库和应用形成互相的影响。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"></v:path><o:lock v:ext="edit" aspectratio="t"></o:lock></v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" o:ole="" style="width: 144.75pt; height: 73.5pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image001.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="99" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/1.PNG" width="195"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步架构演变对技术上的知识体系基本没有要求。</span><span lang="EN-US"><br><br>&lt;!–[if !supportLineBreakNewLine]–&gt;<br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt">架构演变第二步：增加页面缓存</span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">好景不长，随着访问的人越来越多，你发现响应速度又开始变慢了，查找原因，发现是访问数据库的操作太多，导致数据连接竞争激烈，所以响应变慢，但数据库连</span> <span style="font-family: 宋体">接又不能开太多，否则数据库机器压力会很高，因此考虑采用缓存机制来减少数据库连接资源的竞争和对数据库读的压力，这个时候首先也许会选择采用</span><span lang="EN-US">squid </span><span style="font-family: 宋体">等类似的机制来将系统中相对静态的页面（例如一两天才会有更新的页面）进行缓存（当然，也可以采用将页面静态化的方案），这样程序上可以不做修改，就能够</span> <span style="font-family: 宋体">很好的减少对</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">的压力以及减少数据库连接资源的竞争，</span><span lang="EN-US">OK</span><span style="font-family: 宋体">，于是开始采用</span><span lang="EN-US">squid</span><span style="font-family: 宋体">来做相对静态的页面的缓存。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1026" type="#_x0000_t75" o:ole="" style="width: 144.75pt; height: 116.25pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image003.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="156" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/2.PNG" width="195"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">前端页面缓存技术，例如</span><span lang="EN-US">squid</span><span style="font-family: 宋体">，如想用好的话还得深入掌握下</span><span lang="EN-US">squid</span><span style="font-family: 宋体">的实现方式以及缓存的失效算法等。</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt">架构演变第三步：增加页面片段缓存</span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">增加了</span><span lang="EN-US">squid</span><span style="font-family: 宋体">做缓存后，整体系统的速度确实是提升了，</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">的压力也开始下降了，但随着访问量的增加，发现系统又开始变的有些慢了，在尝</span> <span style="font-family: 宋体">到了</span><span lang="EN-US">squid</span><span style="font-family: 宋体">之类的动态缓存带来的好处后，开始想能不能让现在那些动态页面里相对静态的部分也缓存起来呢，因此考虑采用类似</span><span lang="EN-US">ESI</span><span style="font-family: 宋体">之类的页面片段缓存策略，</span><span lang="EN-US">OK</span><span style="font-family: 宋体">，于是开始采用</span><span lang="EN-US">ESI</span><span style="font-family: 宋体">来做动态页面中相对静态的片段部分的缓存。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1027" type="#_x0000_t75" o:ole="" style="width: 252pt; height: 175.5pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image005.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="235" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/3.PNG" width="337"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">页面片段缓存技术，例如</span><span lang="EN-US">ESI</span><span style="font-family: 宋体">等，想用好的话同样需要掌握</span><span lang="EN-US">ESI</span><span style="font-family: 宋体">的实现方式等；</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt">架构演变第四步：数据缓存</span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">在采用</span><span lang="EN-US">ESI</span><span style="font-family: 宋体">之类的技术再次提高了系统的缓存效果后，系统的压力确实进一步降低了，但同样，随着访问量的增加，系统还是开始变慢，经过查找，可能会发现系</span> <span style="font-family: 宋体">统中存在一些重复获取数据信息的地方，像获取用户信息等，这个时候开始考虑是不是可以将这些数据信息也缓存起来呢，于是将这些数据缓存到本地内存，改变完毕后，完全符合预期，系统的响应速度又恢复了，数据库的压力也再度降低了不少。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1028" type="#_x0000_t75" o:ole="" style="width: 255pt; height: 192.75pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image007.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="258" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/4.PNG" width="341"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">缓存技术，包括像</span><span lang="EN-US">Map</span><span style="font-family: 宋体">数据结构、缓存算法、所选用的框架本身的实现机制等。</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 宋体">架构演变第五步：</span> <span style="font-family: 宋体">增加</span><span lang="EN-US">webserver</span></span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">好景不长，发现随着系统访问量的再度增加，</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">机器的压力在高峰期会上升到比较高，这个时候开始考虑增加一台</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">，这也是为了同时解决可用性的问题，避免单台的</span><span lang="EN-US">webserver down</span><span style="font-family: 宋体">机的话就没法使用了，在做了这些考虑后，决定增加一台</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">，增加一台</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">时，会碰到一些问题，典型的有：</span><span lang="EN-US"><br><br>1</span><span style="font-family: 宋体">、如何让访问分配到这两台机器上，这个时候通常会考虑的方案是</span><span lang="EN-US">Apache</span><span style="font-family: 宋体">自带的负载均衡方案，或</span><span lang="EN-US">LVS</span><span style="font-family: 宋体">这类的软件负载均衡方案；</span><span lang="EN-US"><br><br>2</span><span style="font-family: 宋体">、如何保持状态信息的同步，例如用户</span><span lang="EN-US">session</span><span style="font-family: 宋体">等，这个时候会考虑的方案有写入数据库、写入存储、</span><span lang="EN-US">cookie</span><span style="font-family: 宋体">或同步</span><span lang="EN-US">session</span><span style="font-family: 宋体">信息等机制等；</span><span lang="EN-US"><br><br>3</span><span style="font-family: 宋体">、如何保持数据缓存信息的同步，例如之前缓存的用户数据等，这个时候通常会考虑的机制有缓存同步或分布式缓存；</span><span lang="EN-US"><br><br>4</span><span style="font-family: 宋体">、如何让上传文件这些类似的功能继续正常，这个时候通常会考虑的机制是使用共享文件系统或存储等；</span><span lang="EN-US"><br><br></span><span style="font-family: 宋体">在解决了这些问题后，终于是把</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">增加为了两台，系统终于是又恢复到了以往的速度。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1029" type="#_x0000_t75" o:ole="" style="width: 255pt; height: 192.75pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image009.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="244" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/5.PNG" width="341"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">负载均衡技术（包括但不限于硬件负载均衡、软件负载均衡、负载算法、</span><span lang="EN-US">linux</span><span style="font-family: 宋体">转发协议、所选用的技术的实现细节等）、主备技术（包括但不限于</span><span lang="EN-US">ARP</span><span style="font-family: 宋体">欺骗、</span><span lang="EN-US">linux heart-beat</span><span style="font-family: 宋体">等）、状态信息或缓存同步技术（包括但不限于</span><span lang="EN-US">Cookie</span><span style="font-family: 宋体">技术、</span><span lang="EN-US">UDP</span><span style="font-family: 宋体">协议、状态信息广播、所选用的缓存同步技术的实现细节等）、共享文件技术（包括但不限于</span><span lang="EN-US">NFS</span><span style="font-family: 宋体">等）、存储技术（包括但不限于存储设备等）。</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt">架构演变第六步：分库</span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">享受了一段时间的系统访问量高速增长的幸福后，发现系统又开始变慢了，这次又是什么状况呢，经过查找，发现数据库写入、更新的这些操作的部分数据库连接的</span> <span style="font-family: 宋体">资源竞争非常激烈，导致了系统变慢，这下怎么办呢，此时可选的方案有数据库集群和分库策略，集群方面像有些数据库支持的并不是很好，因此分库会成为比较普遍的策略，分库也就意味着要对原有程序进行修改，一通修改实现分库后，不错，目标达到了，系统恢复甚至速度比以前还快了。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1030" type="#_x0000_t75" o:ole="" style="width: 255pt; height: 192.75pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image011.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="243" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/6.PNG" width="341"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步更多的是需要从业务上做合理的划分，以实现分库，具体技术细节上没有其他的要求；</span></p><br><p class="MsoNormal"><font face="宋体">但同时随着数据量的增大和分库的进行，在数据库的设计、调优以及维护上需要做的更好，因此对这些方面的技术还是提出了很高的要求的。</font></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 宋体">架构演变第七步：分表、</span><span lang="EN-US">DAL</span><span style="font-family: 宋体">和分布式缓存</span></span></span></strong><span lang="EN-US"><br><br></span><span style="font-family: 宋体">随着系统的不断运行，数据量开始大幅度增长，这个时候发现分库后查询仍然会有些慢，于是按照分库的思想开始做分表的工作，当然，这不可避免的会需要对程序</span> <span style="font-family: 宋体">进行一些修改，也许在这个时候就会发现应用自己要关心分库分表的规则等，还是有些复杂的，于是萌生能否增加一个通用的框架来实现分库分表的数据访问，这个在</span><span lang="EN-US">ebay</span><span style="font-family: 宋体">的架构中对应的就是</span><span lang="EN-US">DAL</span><span style="font-family: 宋体">，这个演变的过程相对而言需要花费较长的时间，当然，也有可能这个通用的框架会等到分表做完后才开始做，同时，在这个阶段可</span> <span style="font-family: 宋体">能会发现之前的缓存同步方案出现问题，因为数据量太大，导致现在不太可能将缓存存在本地，然后同步的方式，需要采用分布式缓存方案了，于是，又是一通考察和折磨，终于是将大量的数据缓存转移到分布式缓存上了。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1031" type="#_x0000_t75" o:ole="" style="width: 255.75pt; height: 328.5pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image013.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="439" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/7.PNG" width="342"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">分表更多的同样是业务上的划分，技术上涉及到的会有动态</span><span lang="EN-US">hash</span><span style="font-family: 宋体">算法、</span><span lang="EN-US">consistent hash</span><span style="font-family: 宋体">算法等；</span></p><br><p class="MsoNormal"><span lang="EN-US">DAL</span><span style="font-family: 宋体">涉及到比较多的复杂技术，例如数据库连接的管理（超时、异常）、数据库操作的控制（超时、异常）、分库分表规则的封装等；</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt"><span style="font-family: 宋体">架构演变第八步：增加更多的</span><span lang="EN-US">webserver</span></span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">在做完分库分表这些工作后，数据库上的压力已经降到比较低了，又开始过着每天看着访问量暴增的幸福生活了，突然有一天，发现系统的访问又开始有变慢的趋势</span> <span style="font-family: 宋体">了，这个时候首先查看数据库，压力一切正常，之后查看</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">，发现</span><span lang="EN-US">apache</span><span style="font-family: 宋体">阻塞了很多的请求，而应用服务器对每个请求也是比较快的，看来</span> <span style="font-family: 宋体">是请求数太高导致需要排队等待，响应速度变慢，这还好办，一般来说，这个时候也会有些钱了，于是添加一些</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">服务器，在这个添加</span><span lang="EN-US"> webserver</span><span style="font-family: 宋体">服务器的过程，有可能会出现几种挑战：</span><span lang="EN-US"><br><br>1</span><span style="font-family: 宋体">、</span><span lang="EN-US">Apache</span><span style="font-family: 宋体">的软负载或</span><span lang="EN-US">LVS</span><span style="font-family: 宋体">软负载等无法承担巨大的</span><span lang="EN-US">web</span><span style="font-family: 宋体">访问量（请求连接数、网络流量等）的调度了，这个时候如果经费允许的话，会采取的方案是购</span> <span style="font-family: 宋体">买硬件负载，例如</span><span lang="EN-US">F5</span><span style="font-family: 宋体">、</span><span lang="EN-US">Netsclar</span><span style="font-family: 宋体">、</span><span lang="EN-US">Athelon</span><span style="font-family: 宋体">之类的，如经费不允许的话，会采取的方案是将应用从逻辑上做一定的分类，然后分散到不同的软负载集群中；</span><span lang="EN-US"><br><br>2</span><span style="font-family: 宋体">、原有的一些状态信息同步、文件共享等方案可能会出现瓶颈，需要进行改进，也许这个时候会根据情况编写符合网站业务需求的分布式文件系统等；</span><span lang="EN-US"><br><br></span><span style="font-family: 宋体">在做完这些工作后，开始进入一个看似完美的无限伸缩的时代，当网站流量增加时，应对的解决方案就是不断的添加</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1032" type="#_x0000_t75" o:ole="" style="width: 348.75pt; height: 330pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image015.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="441" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/8.PNG" width="466"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">到了这一步，随着机器数的不断增长、数据量的不断增长和对系统可用性的要求越来越高，这个时候要求对所采用的技术都要有更为深入的理解，并需要根据网站的需求来做更加定制性质的产品。</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt">架构演变第九步：数据读写分离和廉价存储方案</span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">突然有一天，发现这个完美的时代也要结束了，数据库的噩梦又一次出现在眼前了，由于添加的</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">太多了，导致数据库连接的资源还是不够用，而这个时候又已经分库分表了，开始分析数据库的压力状况，可能会发现数据库的读写比很高，这个时候通常会想到数据读写分离的方案，当然，这个方案要实现并不</span> <span style="font-family: 宋体">容易，另外，可能会发现一些数据存储在数据库上有些浪费，或者说过于占用数据库资源，因此在这个阶段可能会形成的架构演变是实现数据读写分离，同时编写一些更为廉价的存储方案，例如</span><span lang="EN-US">BigTable</span><span style="font-family: 宋体">这种。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1033" type="#_x0000_t75" o:ole="" style="width: 415.5pt; height: 297.75pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image017.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="398" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/9.PNG" width="555"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">数据读写分离要求对数据库的复制、</span><span lang="EN-US">standby</span><span style="font-family: 宋体">等策略有深入的掌握和理解，同时会要求具备自行实现的技术；</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">廉价存储方案要求对</span><span lang="EN-US">OS</span><span style="font-family: 宋体">的文件存储有深入的掌握和理解，同时要求对采用的语言在文件这块的实现有深入的掌握。</span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p>&nbsp;</o:p></span></p><br><p class="MsoNormal"><strong><span style="font-family: 宋体"><span style="font-size: 14pt">架构演变第十步：进入大型分布式应用时代和廉价服务器群梦想时代</span></span></strong></p><br><p class="MsoNormal"><span style="font-family: 宋体">经过上面这个漫长而痛苦的过程，终于是再度迎来了完美的时代，不断的增加</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">就可以支撑越来越高的访问量了，对于大型网站而言，人气的重要毋</span> <span style="font-family: 宋体">庸置疑，随着人气的越来越高，各种各样的功能需求也开始爆发性的增长，这个时候突然发现，原来部署在</span><span lang="EN-US">webserver</span><span style="font-family: 宋体">上的那个</span><span lang="EN-US">web</span><span style="font-family: 宋体">应用已经非常庞大</span> <span style="font-family: 宋体">了，当多个团队都开始对其进行改动时，可真是相当的不方便，复用性也相当糟糕，基本是每个团队都做了或多或少重复的事情，而且部署和维护也是相当的麻烦，</span> <span style="font-family: 宋体">因为庞大的应用包在</span><span lang="EN-US">N</span><span style="font-family: 宋体">台机器上复制、启动都需要耗费不少的时间，出问题的时候也不是很好查，另外一个更糟糕的状况是很有可能会出现某个应用上的</span><span lang="EN-US">bug</span><span style="font-family: 宋体">就导</span> <span style="font-family: 宋体">致了全站都不可用，还有其他的像调优不好操作（因为机器上部署的应用什么都要做，根本就无法进行针对性的调优）等因素，根据这样的分析，开始痛下决心，将</span> <span style="font-family: 宋体">系统根据职责进行拆分，于是一个大型的分布式应用就诞生了，通常，这个步骤需要耗费相当长的时间，因为会碰到很多的挑战：</span><span lang="EN-US"><br><br>1</span><span style="font-family: 宋体">、拆成分布式后需要提供一个高性能、稳定的通信框架，并且需要支持多种不同的通信和远程调用方式；</span><span lang="EN-US"><br><br>2</span><span style="font-family: 宋体">、将一个庞大的应用拆分需要耗费很长的时间，需要进行业务的整理和系统依赖关系的控制等；</span><span lang="EN-US"><br><br>3</span><span style="font-family: 宋体">、如何运维（依赖管理、运行状况管理、错误追踪、调优、监控和报警等）好这个庞大的分布式应用。</span><span lang="EN-US"><br><br></span><span style="font-family: 宋体">经过这一步，差不多系统的架构进入相对稳定的阶段，同时也能开始采用大量的廉价机器来支撑着巨大的访问量和数据量，结合这套架构以及这么多次演变过程吸取的经验来采用其他各种各样的方法来支撑着越来越高的访问量。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">看看这一步完成后系统的图示：</span></p><br><p class="MsoNormal"><span lang="EN-US"><v:shape id="_x0000_i1034" type="#_x0000_t75" o:ole="" style="width: 414.75pt; height: 322.5pt"><v:imagedata src="file:///C:\DOCUME~1\bixuan\LOCALS~1\Temp\msohtml1\01\clip_image019.emz" o:title=""></v:imagedata></v:shape>&lt;!–[if !vml]–&gt;<img height="431" alt="" src="http://www.blogjava.net/images/blogjava_net/bluedavy/arch/10.PNG" width="554"><br><br>&lt;!–[endif]–&gt;</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及到了这些知识体系：</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">这一步涉及的知识体系非常的多，要求对通信、远程调用、消息机制等有深入的理解和掌握，要求的都是从理论、硬件级、操作系统级以及所采用的语言的实现都有清楚的理解。</span></p><br><p class="MsoNormal"><span style="font-family: 宋体">运维这块涉及的知识体系也非常的多，多数情况下需要掌握分布式并行计算、报表、监控技术以及规则策略等等。</span><span lang="EN-US"><o:p></o:p></span></p><br><p class="MsoNormal"><span lang="EN-US"><o:p></o:p></span><span style="font-family: 宋体">说起来确实不怎么费力，整个网站架构的经典演变过程都和上面比较的类似，当然，每步采取的方案，演变的步骤有可能有不同，另外，由于网站的业务不同，会有不同的专业技术的需求，这篇</span><span lang="EN-US">blog</span><span style="font-family: 宋体">更多的是从架构的角度来讲解演变的过程，当然，其中还有很多的技术也未在此提及，像数据库集群、数据挖掘、搜索等，但在真实的演变过程中还会借助像提升硬件配置、网络环境、改造操作系统、</span><span lang="EN-US">CDN</span><span style="font-family: 宋体">镜像等来支撑更大的流量，因此在真实的发展过程中还会有很多的不同，另外一个大型网站要做到的远远不仅仅上面这些，还有像安全、运维、运营、服务、存储等，要做好一个大型的网站真的很不容易，写这篇文章更多的是希望能够引出更多大型网站架构演变的介绍，</span><span lang="EN-US">:)</span><span style="font-family: 宋体">。</span></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2008-11-12T16:00:00.000Z"><a href="/baidu-interview/">2008-11-13</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/baidu-interview/">百度面试题（市场部）</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><br><br>在您进入百度在线笔试系统进行答题前，请仔细阅读并接受以下笔试规则：<br><br>在线笔试分定时笔试和不定时笔试两种：<br><br>定时笔试：您的可答题时间是笔试时长减去您初次成功登录进入笔试答题页面时距笔试开始已过的时间；<br><br>例如，如果笔试时长是2小时，笔试20:00:00开始，您于20:20:00登录，您将有100分钟答题时间；<br><br>不定时笔试：您的可答题时间是您初次成功登录进入笔试答题页面时开始后的笔试规定时长；例如，如果笔试时长是2小时，您于20:20:00登录，您的答题时间将在22:20:00结束；<br><br>您可以在笔试开放的答题期间适当休息，但笔试系统不因您中断答题、关闭页面等而停止计时；<br><br>请务必在笔试时间结束前提交您的答案，以保证我们能及时处理；<br><br>请独立完成笔试的答题，但您可参考一切电子和书面的资料；<br><br>在笔试系统开放期间请勿将题目以任何方式对外传播。<br><br>百度商业应用产品市场部招聘笔试题目<br><br>姓名 <strong><strong><strong><strong>__</strong></strong></strong></strong> 毕业院校 <strong><strong><strong><strong>_</strong></strong></strong></strong> 专业 <strong><strong><strong>_</strong></strong></strong><br><br>毕业时间 <strong><strong><strong>_</strong></strong></strong> 手机 <strong><strong><strong><strong>__</strong></strong></strong></strong> Email <strong><strong><strong><strong>__</strong></strong></strong></strong><br><br>申请职位（请打钩，可多选）：产品设计工程师 产品策略分析员<br><br>欢迎你应聘百度商业应用产品市场部！请配合我们在60分钟内完成以下全部题目。请在答题纸上作答。草稿纸另外提供。请务必通读题目后进行答题。<br><br>1. 题面：16，8，8，12，24，60，（）<br><br>问题：请补充括号中的数字，并说明分析过程。提示，正确答案是以下数字中的某一个：300，240，180，120，80，40，20<br><br>2. 题面：请阅读如下诗句中的一部分<br><br>乳齿象的长牙，在激烈的争吵中猛烈的碰撞着<br><br>最后都成了台球桌上来回滚动的球<br><br>查理曼大帝那柄正义之剑<br><br>已经斑驳布满了氧化铁，众人称它为铁锈<br><br>灰熊那力大无比的拥抱，所有人都惧怕<br><br>但如今它已成了毛毯<br><br>问题：请体会诗句中表达的主题，并根据此主题，续写1~2个段落，并简要说明思路<br><br>3. 题面：有一天你回家，拿出钥匙开门，却打不开门<br><br>问题：请列出所有你能想到的可能的原因、检验方法、解决方案<br><br>4. 题面：<br><br>某日，三位武林人士约定比武以决定谁能作为百度公司的武侠形象代言人，他们分别是 李寻欢、段誉、韦小宝。<br><br>他们的武功情况如下：李寻欢武功最高，命中率100%（即只要他出招，必定命中目标）；段誉次之，命中率50%；韦小宝较弱，命中率30%<br><br>比武规则：为了以示公平，每一轮按照如下先后顺序出招&mdash;&mdash;韦小宝先出招，段誉第二个，李寻欢最后，轮到某人出招时，可以自由选择仍未出局的人为目标发招，被命中的人将成为败者并立即退出比武。按照这样的顺序循环进行，直到最后剩下1人为止，成为胜者<br><br>问题：<br><br>1、这三个人是三本武侠作品中的人物，请列出这三本武侠作品以及作者，并选取其中一本，用尽可能精炼的语言描述其故事梗概。<br><br>2、假设这3人都是绝顶聪明的，即他们均按照最利于自己获胜的方式选择目标，那么请问，谁最有可能成为百度的武侠形象代言人？为什么？并至少描述前2轮他们各自采取的策略<br><br>3、请简述你从本题中得到的启发<br><br>5. 问题：请描述你的一项特长或爱好，并在答题纸上进行证明<br><br>6. 问题：请列出你选择一份工作的最重要三条标准，简述原因<br><br>7. 问题：1、请列出至少6种百度的产品，其中至少包含2项商业性的产品<br><br>2、请挑选列出的商业性产品中的一种，用最精炼的语言描述该产品并简述你理解的该产品的核心内容（如果列不出商业性的，可以列非商业的，但会相应扣分）<br><br>8. 题面：假设你现在已经毕业，给你1万元rmb作为本钱，要求在你所在的学校附近开展商业活动，在半年到一年的时间回收成本并实现利润最大化，并且可以在正常情况下（即不考虑天灾人祸）实现在2~3年内持续盈利。<br><br>问题：请给出你的实现方案及思考本问题的思路，包括步骤、时间表、人员管理、成本控制，以及可能出现的风险点和应对方案等。请注意方案的完整性和合理性，不必拘泥于细节<br><br>9. 问题：请思考并描述椅子的起源<br><br>10. 题面：有人带了一枚硬币给博物馆馆长，希望卖给博物馆。硬币上面刻着铸造日期是&ldquo;公元前540年&rdquo;。馆长根本没有考虑是否购买，而是直接通知了警方。<br><br>问题：请问这是为什么？并简述你的思考过程<br><br>11. 题面：一个朋友给我讲述了如下故事，讲故事的人声称该故事是真实的：<br><br>很久以前，一位美国男子和他的妻子去教堂参加活动，布道太长了，男子很困，于是趴在桌上睡着了，梦见了中国的义和团起义，梦中他被俘虏，被带到刽子手的断头台前面，恰巧在这时，他的妻子注意到他在打瞌睡，于是轻轻用随身携带的扇子的边缘敲了一下他的脖子。这位男子马上被吓死了。<br><br>问题：请问这个故事是否是真实的，为什么？简述思考过程<br><br>12. 题面：<br><br>三个警察和三个囚徒共同旅行。一条河挡住了去路，河边有一条船，但是每次只能载2人。存在如下的危险：无论在河的哪边，当囚徒人数多于警察的人数时，将有警察被囚徒杀死。<br><br>问题：请问如何确定渡河方案，才能保证6人安全无损的过河<br><br>13. 题面：这里有一个等式： 2+7-118=129<br><br>问题：这个等式不是一个有效的数学表达式，请在等式中画一条直线，使之变成有效的数学表达式。请注意至少提供3种方法<br><br>14. 问题：你手头有10根火柴，需要摆出两个大小不同的正方形，必须用完所有火柴，请思考尽可能多的方案，并说明分析思路<br><br>备注：答满10道题即为合格，多答可有酌情加分；2、5、6、7是公共必答题；除此以外，产品设计工程师必答题目8，产品策略分析师必答题目4<br><br>百度商业应用产品市场部招聘笔试题目<br><br>姓名 <strong><strong><strong><strong>__</strong></strong></strong></strong> 毕业院校 <strong><strong><strong><strong>_</strong></strong></strong></strong> 专业 <strong><strong><strong>_</strong></strong></strong><br><br>毕业时间 <strong><strong><strong>_</strong></strong></strong> 手机 <strong><strong><strong><strong>__</strong></strong></strong></strong> Email <strong><strong><strong><strong>__</strong></strong></strong></strong><br><br>申请职位（请打钩，可多选）：产品设计工程师 产品策略分析员<br><br>欢迎你应聘百度商业应用产品市场部！笔试时间60分钟，另提供15分钟的可选延长。请在答题纸上作答。草稿纸另外提供。请务必通读题目后进行答题。<br><br>15. 题面：1，-6，-9，0，45，198，（）<br><br>问题：请补充括号中的数字，并说明分析过程。提示，正确答案是以下数字中的某一个：9，18，24，39，36，48，45，52，58，64，72，98，请说出推算第100个数字的方法<br><br>16. 题面：日出江花红胜火<br><br>问题：1、请补充该诗句在原诗中的下半句，并说明作者，诗名<br><br>2、请自己写一句下半句，不允许使用原诗句，尽量保持对仗和结构，并简单说明思考过程<br><br>17. 题面：<br><br>某日，三位武林人士约定比武以决定谁能作为百度公司的武侠形象代言人，他们分别是 李寻欢、段誉、韦小宝。<br><br>他们的武功情况如下：李寻欢武功最高，命中率a（即出招时命中目标的概率）；段誉次之，命中率b；韦小宝较弱，命中率c 且1&gt;a&gt;b&gt;c&gt;0<br><br>比武规则：为了以示公平，每一轮按照如下先后顺序出招&mdash;&mdash;韦小宝先出招，段誉第二个，李寻欢最后，轮到某人出招时，可以自由选择仍未出局的人为目标发招，被命中的人将成为败者并立即退出比武。按照这样的顺序循环进行，直到最后剩下1人为止，成为胜者<br><br>问题：<br><br>1、这三个人是三本武侠作品中的人物，请列出这三本武侠作品以及作者，并选取其中一本，用尽可能精炼的语言描述其故事梗概。<br><br>2、假设这3人都是绝顶聪明的，即他们均按照最利于自己获胜的方式选择目标，那么请问，谁最有可能成为百度的武侠形象代言人，每个人获胜的几率分别为多少？请给出推演方法和思路<br><br>3、如果本题不进行计算，直接猜测答案，你将如何回答，为什么？<br><br>18. 问题：<br><br>1、著名的牛顿定律，都包含哪几个？请用精炼的语言描述他们，并针对每一个列出其在现实生活中的至少一项应用<br><br>2、请选取牛顿定律中的一个或多个，谈谈对于你人生的启发<br><br>19. 题面：这里有一个等式： 6+6-317=329<br><br>问题：这个等式不是一个有效的数学表达式，请在其中画一条直线，使之变成有效的数学表达式。请注意至少提供5种方法<br><br>20. 题面：<br><br>靠近珠江码头的一只船上的一边船舷上悬吊着一架绳梯，绳梯一共有20个横档。自上而下数第11根横档刚刚浸入水中。已知江水以每小时1.2厘米的速度上涨。每两根横档之间的距离是8厘米，每根横档的厚度是0.75厘米。<br><br>问题：请问24小时后浸入在水中的横档有几根？48小时后呢？<br><br>21. 问题：请列出你选择一份工作的最重要三条标准，简述原因<br><br>22. 题面：<br><br>四个亲戚在一块度过了愉快的一天，尽管只有4人，但是他们却构成一个大家庭。这四个人中包括一个父亲和一个母亲、一个儿子和一个女儿、一个姐姐和一个弟弟（或一个哥哥和一个妹妹）、一个舅舅和一个舅妈、一个侄子和一个侄女、以及两个堂（或表）兄妹（或姐弟）。<br><br>所有这些关系是发生在这4人之间（即如果某人是父亲，则他必是另外三人中某人或某些人的父亲，依次类推）。<br><br>这4个人之间不存在其它的婚姻关系。<br><br>问题：<br><br>请分析这是为什么？并说明思考过程<br><br>23. 问题：请最简洁的语言，精确的描述一种游戏规则<br><br>24. 问题：1、请列出至少6种百度的产品，其中至少包含2项商业性的产品<br><br>2、请挑选列出的商业性产品中的一种，用最精炼的语言描述该产品并简述你理解的该产品的核心内容（如果列不出商业性的，可以列非商业的，但会相应扣分）<br><br>25. 题面：<br><br>DONALD+GERALD=ROBERT<br><br>上面等式中的每个字母都代表一个0~9的自然数<br><br>问题：请分析并列出各个字母代表的数字<br><br>26. 题面：某建筑师酷爱对称，他想在公园中种植4棵树，要求每棵树距离其它三棵树是一样的（距离的定义以树根与地面的接触部来计算）<br><br>问题：请问该如何种植？请列出所有你想到的可能，并说明分析过程<br><br>27. 题面：某另外一个建筑师，他想在公园中种植10棵树，要求种成5排，每排4棵，且每一排上相邻树的距离是一样的（距离的定义同样以树根与地面的接触部来计算）<br><br>问题：请问该如何种植？请列出所有你想到的可能，并说明分析过程<br><br>如果是12棵树，要求种成6排，同样每排4棵，该如何进行？<br><br>28. 题面：两个对手玩一个游戏，桌上有标有1~9自然数的9张卡片，游戏规则是轮流从桌上的剩余卡片中取一张纸片，最先使得两人取出的卡片的数字之和等于15的人获胜。问题：请问是否存在先手必胜或者后手必胜的方法，如果有，请列出，并说明分析方法<br><br>29. 题面：假如你是一家国内顶尖的笔记本电脑制造公司的负责新产品的项目经理，公司决定推出面向大学生的笔记本，以打开和开拓这方面的市场。<br><br>问题：请提供你的项目方案及思考本问题的思路，包括步骤、时间表、人员管理、成本控制，以及可能出现的风险点和应对方案等。请注意方案的完整性和合理性，不必拘泥于细节<br><br>30. 题面：<br><br>三个警察和三个囚徒共同旅行。一条河挡住了去路，河边有一条船，但是每次只能载2人。存在如下的危险：无论在河的哪边，当囚徒人数多于警察的人数时，将有警察被囚徒杀死。<br><br>问题：请问如何确定渡河方案，才能保证6人安全无损的过河<br><br>备注：题目顺序与难度无关，答满10道题即为及格，多答可有加分；2、7、14、10、3、15必答<br><br>&nbsp;<span style="color: #ff0000">——————————————————————————关于技术的</span></p><br><p>有一根27厘米的细木杆，在第3厘米、7厘米、11厘米、17厘米、23厘米这五个位置上各有一只蚂蚁。木杆很细，不能同时通过一只蚂蚁。开始时，蚂蚁的头朝左还是朝右是任意的，它们只会朝前走或调头，但不会后退。当任意两只蚂蚁碰头时，两只蚂蚁会同时调头朝反方向走。假设蚂蚁们每秒钟可以走一厘米的距离。编写程序，求所有蚂蚁都离开木杆的最小时间和最大时间。<br><br>&nbsp;</p><br><p>&nbsp;</p><br><p>解法一：</p><br><p>最小11,最大就….32种走法,用程序模拟算比较简单,如果找算法规律…..就…..</p><br><p>正解！</p><br><p>每个蚂蚁对象维护自己的几个属性：<br><br>time 在木头上走的时间<br><br>pos&nbsp; 在木头上的坐标<br><br>orientation 方向(-1 or 1)</p><br><p>recursion:<br><br>1 所有蚂蚁走一步，矢量pos加1，time加1<br><br>2 检查是否有蚂蚁在同一坐标上，如果有，将它们掉头<br><br>3 检查是否有蚂蚁的坐标在[0,27]以外的外围，如果有，记下它的time值，然后这个蚂蚁出局<br><br>4 repeat 1-3，直到所有蚂蚁出局。它们time的最大值就是一个解(一共有32个情况，32种解)。<br><br>&nbsp;</p><br><p>解法二：</p><br><p>class FunnyAnt {<br><br>class Ant {<br><br>public final static int LEFT = 0;<br><br>public final static int RIGHT = 1;<br><br>int x;<br><br>int direction;<br><br>public Ant(int x, int direction) {<br><br>this.x = x;<br><br>this.direction = direction;<br><br>}<br><br>public void setDirection(int direction) {<br><br>this.direction = direction;<br><br>}<br><br>public void move() {<br><br>if (direction == LEFT) {<br><br>x -= 1;<br><br>} else {<br><br>x += 1;<br><br>}<br><br>}<br><br>public void switchDirection() {<br><br>direction = (direction + 1) % 2;<br><br>}<br><br>public int getX() {<br><br>return x;<br><br>}<br><br>public String getDirection() {<br><br>return (direction == LEFT) ? &quot;Left&quot; : &quot;Right&quot;;<br><br>}<br><br>}<br><br>public static void main(String[] args) {<br><br>Vector v = new Vector();<br><br>Vector timerV = new Vector();<br><br>FunnyAnt fa = new FunnyAnt();<br><br>int[] positions = {3, 7, 11, 17, 23};<br><br>Ant ant = null;<br><br>// list all conditions<br><br>for (byte i = 0; i &lt; 32; i++) {<br><br>// System.out.println(&quot;I :&quot; + i);<br><br>int tempI = i;<br><br>for (int j = 0; j &lt; 5; j++) {<br><br>byte temp = (byte) (tempI &amp; 0x01);<br><br>// System.out.println(&quot;Position Got :&quot; + temp);<br><br>ant = fa.new Ant(positions[j], temp);<br><br>v.addElement(ant);<br><br>tempI = (byte) (tempI &gt;&gt; 1);<br><br>}<br><br>int timer = 0;<br><br>while (v.size() &gt; 0) {<br><br>ant = null;<br><br>// move ants if out delete<br><br>for (int k = 0; k &lt; v.size(); k++) {<br><br>ant = (FunnyAnt.Ant) v.elementAt(k);<br><br>ant.move();<br><br>int x = ant.getX();<br><br>if (x &lt;= 1 || x &gt;= 27) {<br><br>v.removeElementAt(k);<br><br>}<br><br>}<br><br>timer++;<br><br>// check whether there is collide<br><br>ant = null;<br><br>for (int l = 0, lastX = -1; l &lt; v.size(); l++) {<br><br>ant = (FunnyAnt.Ant) v.elementAt(l);<br><br>if (lastX == ant.getX()) {<br><br>((FunnyAnt.Ant) (v.elementAt(l))).switchDirection();<br><br>((FunnyAnt.Ant) (v.elementAt(l - 1))).switchDirection();<br><br>}<br><br>lastX = ant.getX();<br><br>}<br><br>}<br><br>timerV.addElement(new Integer(timer));<br><br>v.removeAllElements();<br><br>}<br><br>int min = ((Integer) (timerV.elementAt(0))).intValue(), max = ((Integer) (timerV.elementAt(0))).intValue();<br><br>Integer value = null;<br><br>for (int i = 0; i &lt; timerV.size(); i++) {<br><br>value = (Integer) timerV.elementAt(i);<br><br>int x = value.intValue();<br><br>if (x &lt; min) {<br><br>min = x;<br><br>}<br><br>if (x &gt; max) {<br><br>max = x;<br><br>}<br><br>}<br><br>System.out.println(&quot;Max :&quot; + max + &quot; Min :&quot; + min);<br><br>}<br><br>}</p><br><p>&nbsp;</p><br><p>解法三：</p><br><p>&nbsp;</p><br><p><br><br>//是否所有蚂蚁下杆，i为蚂蚁只数<br><br>bool isOut(int <em>p,int i)<br><br>{<br><br>&nbsp;int j=-1;<br><br>&nbsp;while(++j&lt;i)<br><br>&nbsp;&nbsp;if(p[j]!=-1)<br><br>&nbsp;&nbsp;&nbsp;return false;<br><br>&nbsp;return true;<br><br>}</em></p><br><p>//第i+1和第j+1位置蚂蚁是否碰头<br><br>bool isEnt(int p,int i,int j)<br><br>{<br><br>&nbsp; return (p[i]==p[j]&amp;&amp;p[i]!=-1&amp;&amp;p[j]!=-1)?true:false;<br><br>}</p><br><p>int main(void)<br><br>{<br><br>&nbsp;&nbsp; //初始运动方向计数<br><br>&nbsp;&nbsp; unsigned short int count=0;<br><br>&nbsp;&nbsp; //a[0..4]代表3cm,7cm,11cm,17cm,23cm的运动方向，false为向右<br><br>&nbsp;&nbsp; bool a[5]={false,false,false,false,false};</p><br><p>&nbsp;&nbsp; unsigned short int i=1;<br><br>&nbsp;&nbsp; //蚂蚁开始运动方向最多32(2的5次方)种<br><br>&nbsp;&nbsp; for(count;count&lt;32;count++){<br><br>&nbsp;&nbsp;&nbsp; //设置5只蚂蚁初始运动方向<br><br>&nbsp;&nbsp;&nbsp; //打印出蚂蚁初始运动方向<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(int j=0;j&lt;5;j++){<br><br>&nbsp;&nbsp;&nbsp; //因为count总小于32,所以高21位总是0<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[j]=count&amp;(i&lt;&lt;j);<br><br>&nbsp;&nbsp; printf(&quot;%d &quot;,a[j]);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; printf(&quot;\n&quot;);<br><br>&nbsp;&nbsp; //pos[0..4]代表蚂蚁初始位置，若第i只蚂蚁离开杆则pos[i-1]=-1<br><br>&nbsp;&nbsp; int pos[5]={3,7,11,17,23};<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=1;<br><br>&nbsp;&nbsp; //t为时间<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(int t=1;t;t++){<br><br>&nbsp;&nbsp;&nbsp; //蚂蚁下一秒位置<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(int j=0;j&lt;5;j++){<br><br>&nbsp;&nbsp;&nbsp; if(pos[j]!=-1){<br><br>&nbsp;&nbsp;&nbsp;&nbsp; if(a[j])pos[j]++;<br><br>&nbsp;&nbsp;&nbsp;&nbsp; else pos[j]–;<br><br>&nbsp;&nbsp;&nbsp;&nbsp; //蚂蚁下杆<br><br>&nbsp;&nbsp;&nbsp;&nbsp; if(pos[j]&lt;=0||pos[j]&gt;=27)pos[j]=-1;<br><br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; //看相邻两只蚂蚁是否碰头，碰头调转方向<br><br>&nbsp;&nbsp; for(int s=0;s&lt;4;s++){<br><br>&nbsp;&nbsp;&nbsp; if(isEnt(pos,s,s+1)){<br><br>&nbsp;&nbsp;&nbsp;&nbsp; a[s]=!a[s];<br><br>&nbsp;&nbsp;&nbsp;&nbsp; a[s+1]=!a[s+1];<br><br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; //是否所有蚂蚁下杆<br><br>&nbsp;&nbsp; if(isOut(pos,5)){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;count:%d\n&quot;,t);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br><br>&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; return 0;<br><br>}<br><br>&nbsp;</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2008-11-09T16:00:00.000Z"><a href="/campus-hire-java-interview/">2008-11-10</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/campus-hire-java-interview/">校园招聘Java面试杂谈</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>近期参与了几个大学的校园招聘，总体下来感觉还行，由于校园招聘需要面的人很多，差不多面试流程都形成模式了，在面试的过程中，有不少学生问过我，到底面试的标准是什么，不过每个面试官的标准都是不同的，所以也就注定了面试是会有些不公平的，是否对面试官的胃口会起到很大的决定性因素，当然，最重要的还是实力，很多学生会认为面试不公平，但我觉得这也算是从学校进入社会的第一课吧，工作后学生们会发现更多不公平的事，对于学生而言，无论是应届毕业的本科、硕士，我的面试标准都差不多，考察的为Java基础、Java框架、设计模式、互联网架构的了解，当然，在最后会问一些其他的问题，例如大学学习情况呀、一两年后对自己的期望呀、优势和不足、最近看过的技术新闻等等，在这些所有的问题的背后，考察的最重要的是基础掌握的是否扎实、学习能力、反应速度、抗压能力以及技术兴趣。</p><br><p>对于应届生而言，通常都没有太多的实际的商业项目的经验，更多要求是基础的扎实，因此第一关会是java基础的考察，在java基础的考察上通常我会考察下学生对于protected、static等等的掌握程度，在面试的过程中，几乎所有的同学都认为自己熟悉的包是集合，其他的包都谈不上熟悉，在集合包方面可以考察的点也很多，例如List、Set的区别；HashMap的实现方式等；在基础方面，线程、通信、远程调用、并发、GC等这些会成为加分项，我觉的如果学生能对这些有掌握的话就更好了。</p><br><p>第二关会是Java框架的考察，在这方面会考察学生对于自己认为的最熟悉的框架的掌握程度，然后会考察学生对这类框架中的核心思想的掌握情况，例如Struts，那么就可以考察学生对于MVC思想的掌握情况，自主如何实现MVC框架；例如spring，可以考察如何自主实现一个DI框架等，这些题目其实如果学生具备很强的举一反三和反向推理的能力，基本是可以答出来的。</p><br><p>第三关会是设计模式的考察，这关我觉得基本已经属于加分环节了，设计模式方面可以让学生当场写一段自己最熟悉的模式的代码，例如singleton模式，有很多种写法，可以问下学生各种写法有什么不同。</p><br><p>第四关为互联网架构的了解状况，这关纯属加分环节，如果能够对互联网的架构有所了解的话，会非常有帮助。</p><br><p>第一关和第二关属于通关制，如果顺利的通过了第一关和第二关，其实基本也就过了，之后就可以聊聊在大学的学习情况、一两年后的期望、最近看过的技术新闻、大学期间做过的最有成就感的事等等，尽可能的更加全面的了解学生。</p><br><p>根据整体的面试情况来看，现在应届生找工作的压力确实非常的大，而且大部分都已经是硕士了，本科生能过笔试的都不多，能过面试的就更少了，不过也会有就是，面过一个不错的本科生，竟然对jdk的很多代码都有阅读、开源框架上spring DI那部分的代码也仔细的阅读过，并且他去阅读这些代码的原因就是他认为这些代码应该是会写的不错的，需要仔细看看，:)，这我觉得基本是典型的技术人士，另外，还碰到过一个硕士生，他对于Java框架几乎完全不了解，但他有个很明显的特征，就是只要他用过、学过的Java包什么的，例如ArrayList、HashMap等等，他都能做到从头到尾的掌握，可以称的上是精通了，这种我觉得很适合做专业型的基础技术，:)</p><br><p>很多应届生会觉得是因为大学中没教这些，所以导致他们面试很难通过，但我觉得这还是对于技术的兴趣以及自学能力等决定的，大学中最不缺的应该就是时间，完全有足够的时间看看一些源码什么。加强自己的知识体系，为离开学校、进入社会工作做好充足的准备，另外，在面试的时候一定要诚实，不懂的就是不懂，没什么的，不能完全答对面试的问题并不代表就被淘汰了，希望这篇blog能给大学生们提供一点帮助。</p><br><p>本文出自：<a href="http://www.blogjava.net/BlueDavy/archive/2008/11/03/238254.html" target="_blank" rel="external">http://www.blogjava.net/BlueDavy/archive/2008/11/03/238254.html</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+<nav id="pagination">
+  
+    <a href="/page/7/" class="alignleft prev">上一頁</a>
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yeahxj.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/collection/">collection</a><small>3</small></li>
+  
+    <li><a href="/categories/dev/">dev</a><small>14</small></li>
+  
+    <li><a href="/categories/media/">media</a><small>9</small></li>
+  
+    <li><a href="/categories/nono/">nono</a><small>32</small></li>
+  
+    <li><a href="/categories/think/">think</a><small>17</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">標籤</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/D2/">D2</a><small>1</small></li>
+  
+    <li><a href="/tags/PJBlog-WP-转换/">PJBlog WP 转换</a><small>1</small></li>
+  
+    <li><a href="/tags/f2e/">f2e</a><small>1</small></li>
+  
+    <li><a href="/tags/前端/">前端</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 Xj Ye
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
