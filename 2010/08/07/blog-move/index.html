@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>博客迁移，组织未变 | 叶行骏</title>
+  <meta name="author" content="Xj Ye">
+  
+  <meta name="description" content="这可能是很简单的活儿，大师们肯定很不屑，但因为之前一直没干过，我想第一次，无论怎样，总是值得纪念的。
+最早是从windows的主机迁移到Linux的，没其他的办法，只有FTP。现在是从Linux迁移到Linux，那就很方便了。
+首先老空间导出Mysql：mysqldump -u 数据库用户名 -p ">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="博客迁移，组织未变"/>
+  <meta property="og:site_name" content="叶行骏"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="叶行骏" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">叶行骏</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2010-08-06T16:00:00.000Z"><a href="/2010/08/07/blog-move/">2010-08-07</a></time>
+      
+      
+  
+    <h1 class="title">博客迁移，组织未变</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://www.yeahxj.com/wp-content/uploads/made-in-china.jpg" target="_blank" rel="external"><img src="http://www.yeahxj.com/wp-content/uploads/made-in-china.jpg" alt="made-in-china" title="made-in-china" width="600" height="221" class="size-full wp-image-317"></a><br>这可能是很简单的活儿，大师们肯定很不屑，但因为之前一直没干过，我想第一次，无论怎样，总是值得纪念的。</p>
+<p>最早是从windows的主机迁移到Linux的，没其他的办法，只有FTP。<br>现在是从Linux迁移到Linux，那就很方便了。</p>
+<p>首先老空间导出Mysql：<br>mysqldump -u 数据库用户名 -p 数据库名 &gt; db.sql<br>然后打包所有的文件：<br>tar -czf backup.tar.gz *<br>然后新空间wget获取包：<br>wget -d 域名/backup.tar.gz backup.tar.gz<br>解包：<br>tar -xzvf backup.tar.gz<br>导入mysql数据库：<br>mysql -u 数据库用户名 -p 数据库名 &lt; db.sql<br>访问OK之后就可以去切换你的域名A记录了。<br>据说用scp更加方便。</p>
+<p>组织还是<a href="http://miao.in/，头目还是http://ooxx.me/，很不错，当然不仅仅是放博客了，年复一年！" target="_blank" rel="external">http://miao.in/，头目还是http://ooxx.me/，很不错，当然不仅仅是放博客了，年复一年！</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/dev/">dev</a>
+  </div>
+
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+
+<div id="disqus_thread"></div>
+<script>
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//yeahxj.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+  
+</section>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yeahxj.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/collection/">collection</a><small>3</small></li>
+  
+    <li><a href="/categories/dev/">dev</a><small>14</small></li>
+  
+    <li><a href="/categories/media/">media</a><small>9</small></li>
+  
+    <li><a href="/categories/nono/">nono</a><small>32</small></li>
+  
+    <li><a href="/categories/think/">think</a><small>17</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">標籤</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/D2/">D2</a><small>1</small></li>
+  
+    <li><a href="/tags/PJBlog-WP-转换/">PJBlog WP 转换</a><small>1</small></li>
+  
+    <li><a href="/tags/f2e/">f2e</a><small>1</small></li>
+  
+    <li><a href="/tags/前端/">前端</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 Xj Ye
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

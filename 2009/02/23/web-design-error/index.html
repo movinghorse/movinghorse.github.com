@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Web设计中9个常见的可用性错误 | 叶行骏</title>
+  <meta name="author" content="Xj Ye">
+  
+  <meta name="description" content="现在，比较牛的设计师和开发者都认识到了可用性在他们工作中的重要性。可用性好的网站会极大地提高用户体验，并且好的用户体验会让用户更加快乐。用聪明的设计决策取悦并满足您的访客，而不是阻挠和激怒他们。下面是9个网站经常面临的可用性问题 ，以及对于这些问题的推荐解决方案。 您可能还对下面的文章感兴趣：   ">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Web设计中9个常见的可用性错误"/>
+  <meta property="og:site_name" content="叶行骏"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="叶行骏" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">叶行骏</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2009-02-22T16:00:00.000Z"><a href="/2009/02/23/web-design-error/">2009-02-23</a></time>
+      
+      
+  
+    <h1 class="title">Web设计中9个常见的可用性错误</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>现在，比较牛的设计师和开发者都认识到了可用性在他们工作中的重要性。可用性好的网站会极大地提高用户体验，并且好的用户体验会让用户更加快乐。用聪明的设计决策取悦并满足您的访客，而不是阻挠和激怒他们。下面是<strong>9个网站经常面临的可用性问题</strong> ，以及对于这些问题的推荐解决方案。 您可能还对下面的文章感兴趣：</p><br><ul><br>    <li><a href="http://www.smashingmagazine.com/2007/09/27/10-usability-nightmares-you-should-be-aware-of/" target="_blank" closure_hashcode_="244">10 Usability Nightmaters That You Should Avoid</a></li><br>    <li><a href="http://www.smashingmagazine.com/2007/10/09/30-usability-issues-to-be-aware-of/" target="_blank" closure_hashcode_="245">30 Usability Issues To Be Aware Of</a></li><br>    <li><a href="http://www.smashingmagazine.com/2009/01/19/12-useful-techniques-for-good-user-interface-design-in-web-applications/" target="_blank" closure_hashcode_="246">12 Useful Techniques For Good Interface Design</a></li><br>    <li><a href="http://www.smashingmagazine.com/2009/01/12/10-useful-web-application-interface-techniques/" target="_blank" closure_hashcode_="247">10 Useful Web Application Interface Techniques</a></li><br></ul><br><h2>1. 太小的链接点击区域</h2><br><p>设置超文本链接的目的是被点击，确保它们很容易点击才有意义。下面的示例中的链接实在是太小了;点击它们的难度太高。 这些是 评论中的链接，Hacker News 是一个社会新闻的网站。 （点击区域用红色突出显示） ：</p><br><p><a href="http://news.ycombinator.com/" target="_blank" closure_hashcode_="248"><img height="140" alt="HackerNews link click areas" src="http://iamsure.org/images/usability-problems-solutions/hackernews_links.png" width="430"></a></p><br><p>下面例子中包含相同的界面元素，链接的评论，但是这个例子中有一个很大的可点击区域：</p><br><p><a href="http://newspond.com/" target="_blank" closure_hashcode_="249"><img height="95" alt="NewsPond link click areas" src="http://iamsure.org/images/usability-problems-solutions/newspond_links.png" width="407"></a></p><br><p><em><a href="http://newspond.com/" target="_blank" closure_hashcode_="250">Newspond</a>comments link.</em></p><br><p>为什么我们需要一个更大的点击区域？ 很简单。 因为我们移动鼠标并不是很准确。 <strong>一个大号的点击区域使鼠标光标悬停在链接上更容易</strong>。如何能有一个大号的点击区域呢？我们可以使整个链接更大，或者使用CSS &ldquo;padding&rdquo;属性增加链接周围的空间。 代码如下：</p><br><p><span><span>&lt;</span><span>a </span><span>href</span><span>=</span><span>&quot;<a href="http://www.examplesite.com&amp;quot" target="_blank" rel="external">http://www.examplesite.com&amp;quot</a>;</span><span>style</span><span>=</span><span>&quot;padding: 5px;&quot;</span><span>&gt;</span><span>Example Site</span><span>&lt;</span><span>a</span><span>&gt;</span></span></p><br><p>为了使例子简单点，这个CSS样式直接写在代码里了，但在现实生活中您可能是在您的CSS文件中添加一个样式，给这个链接一个class或者是一个id，然后指向它。</p><br><p>在37signals上，你可以阅读到更多关于填充链接以更适用于鼠标点击的文章，的文章棉衣链接的目标 。文章认为，填充为用户提供了 &ldquo;舒适的感觉。真的非常容易点击链接。感觉链接就像是在配合你工作不是和你对着干你。 &rdquo;</p><br><h2>2. 错误使用的分页</h2><br><p>分页指把内容分为几页。如果需要显示一个很长的内容列表，这是网站上常用的方式；例如，商店中的产品或是相册中的照片。因为这种目的使用分页是有意义的，因为<strong>太多的项目</strong>显示在一个页面上将会使网页下载和处理<strong>速度变慢</strong>。</p><br><p><a href="http://www.feedmyapp.com/" target="_blank" closure_hashcode_="251"><img height="68" alt="FeedMyApp pagination" src="http://iamsure.org/images/usability-problems-solutions/feedmyapp_pagination.png" width="390"></a></p><br><p><em><a href="http://www.feedmyapp.com/" target="_blank" closure_hashcode_="252">FeedMyApp</a>以正确的方式使用分页：把其海量的应用服务列表以合适的量显示。</em></p><br><p>但是现在还有人用另一种方式在Web上使用分页。 .内容网页上，比如博客的一篇文章，有时也会分成若干页。 为什么这样做？ 有什么好处么？不太可能是文章实在太长了，因此需要分页; 在大多数情况下， 这样做是用来提高页面浏览量的 。因为很多博客和杂志通过广告获得收入，获得更多的页面浏览量（即单独网页的加载数量）来提高他们的浏览统计数据，使他们能够在每个广告上获利更多。</p><br><p><a href="http://www.wired.com/techbiz/startups/multimedia/2008/02/gallery_google_logos" target="_blank" closure_hashcode_="253"><img height="350" alt="Wired article paginated" src="http://iamsure.org/images/usability-problems-solutions/wired_google_logo.png" width="370"></a></p><br><p><em><a href="http://www.wired.com/techbiz/startups/multimedia/2008/02/gallery_google_logos" target="_blank" closure_hashcode_="254">Wired 上的文章《Google的Logo》</a> 分为8页，非常难以阅读。</em></p><br><p>虽然这可能看起来像是一种简单的方法，让您可以从广告中挤压出更多的钱，但它也带来了两个主要的问题。</p><br><p>首先，这样做真的，真的非常讨厌。 阅读一篇文章不得不加载好几页一点也不好玩。 您给您的访客设置了一个<strong>完全没有必要的障碍</strong>。</p><br><p>第二个原因是SEO（搜索引擎优化） 。 搜索引擎使用您网页上的内容理解它是关于什么的，然后相应地进行索引。 如果内容分成若干页，内容就被稀释了，每个页面<strong>更难理解</strong>并且其中和主题相关的<strong>关键字也更少</strong>了 。 这可能会对文章在搜索引擎中的排名产生不利影响。</p><br><h2>3. 重复的网页标题</h2><br><p>每个网页上的标题都是非常重要的。网页标题就是HTML代码区段中我们写在</p><br><p>Google搜索结果中这个页面的样子：</p><br><p><img height="120" alt="Smashing Magazine SERP" src="http://iamsure.org/images/usability-problems-solutions/smashingmag_serp.png" width="470" style="margin-left: 10px"></p><br><h2>4. 内容难以扫描</h2><br><p>为了确保您的网站易用性，您不仅需要有一个好的设计，你还需要<strong>良好的Copy</strong>（文案）。 Copy（文案）是一个术语，用来描述网站上所有的文本内容。 是的，好的设计能引导您的访客浏览您的网站，将其注意力集中在重要的事情上，帮助他们理解信息块，但访客仍然需要阅读文字来处理信息。这意味着Copy是你整体网站设计中的一个<strong>重要组成部分</strong>。</p><br><p>在你能写出一份好的文案之前，你需要了解人们实际上如何浏览你的网站。不要以为你的访客会从头到尾阅读所有的文字。 那样当然很好，但是不幸的是，根本事实不是这样滴。 人们被Web上的信息狂轰乱炸，而且我们中的大部分人在尽力去消化那些信息。这就导致非常疯狂的浏览行为：<strong>我们从一块内容跳跃到另一块，从一个网站网站跳到下一个。</strong>人们往往不能从头到尾阅读一个网站；他们从最先吸引他们注意力的那一块内容开始，然后移动到下一个捕获他们兴趣的地方。 这个模式看起来有点像这样：</p><br><p><a href="http://www.basecamphq.com/" target="_blank" closure_hashcode_="255"><img height="292" alt="Basecamp" src="http://iamsure.org/images/usability-problems-solutions/basecamp_browse.jpg" width="480"></a></p><br><p><em>The <a href="http://www.basecamphq.com/" target="_blank" closure_hashcode_="256">Basecamp</a> 的到达页面。</em></p><br><p>红圈表示访客目光聚焦的区域，数字表示他们看那些元素的顺序。用户的视线在页面上的兴趣点之间跳跃，想要充分利用这种混乱的浏览模式，你需要用一种特定的方法组织你的文案。下面是几个重点：</p><br><ul><br>    <li>设置几个&ldquo;关注点&rdquo;（Points of focus）。这些部分吸引访客的注意力，你可以用<strong>粗体，高对比度的颜色和较大的字体</strong>来实现这个目的。你也可以使用图片，例如<strong>图标，把图标放在文字旁边</strong>，给这区域带来更多的视觉吸引力。</li><br>    <li>每个&ldquo;关注点&rdquo;应该伴随一个描述性的标题。在进一步阅读文案之前，访客可以了解到一点内容概要。不要做&ldquo;标题党&rdquo;，<strong>标题应该简单明了</strong>。人们希望迅速获得信息，藏着掖着只会惹恼他们。</li><br>    <li>任何文字都应该简短并容易消化。只提供要点，把其余的都删去。在大多数情况下，文案撰写者想补充说明观点的文字只是增加了网站的负载。人们将只阅读小块小块的文字，并且忽视大段的文章。<strong>把你的文案删减到不能再减的地步吧。</strong></li><br></ul><br><p><a href="http://www.openoffice.org/" target="_blank" closure_hashcode_="257">&nbsp;<img height="431" alt="OpenOffice page" src="http://iamsure.org/images/usability-problems-solutions/openoffice.png" width="480"></a></p><br><p><em>&ldquo;为什么你应该使用的</em><em> <a href="http://www.openoffice.org/" target="_blank" closure_hashcode_="258">OpenOffice</a></em><em>;;; &rdquo;网页肯定可以改进。除了顶部的大横幅之外没有设置明确&ldquo;关注点&rdquo;；并且，文案聚在一起成了一个大疙瘩，阅读起来相当困难。</em></p><br><p><a href="http://culturedcode.com/things/" target="_blank" closure_hashcode_="259"><img height="274" alt="Things features" src="http://iamsure.org/images/usability-problems-solutions/things_features.png" width="480"></a></p><br><p><em><a href="http://culturedcode.com/things/" target="_blank" closure_hashcode_="260">Things</a> 软件的功能页，每个功能都是一小段文字，包含一个自己的图标和标题。这使得这个列表非常容易被扫描。为了使文案给人印象更深，列出实际的好处，而不是功能的名字。</em></p><br><h2>5.没有办法取得联系</h2><br><p>如果你想建立一个成功的社区，用户参与是非常重要的，并且如果你想建立一个成功的网站或是社会网络软件，社区是非常重要的。此外，<strong>如果你想拥有忠实的用户，用户参与同样很重要</strong>。迅速回答用户提出的疑问，修复他们遇到的问题并不仅仅意味着你有很好的客户服务&mdash;&mdash;<strong>这意味这你在乎他们</strong>，并且你的用户和访客会很欣赏这一点。</p><br><p>但是很多网站依旧没有给访客一个方便渠道和公司取得联系。一些网站甚至没有Email地址或是联系方式。</p><br><p><a href="http://www.cocacola.com/" target="_blank" closure_hashcode_="261"><img height="369" alt="CocaCola contact page" src="http://iamsure.org/images/usability-problems-solutions/cocacola_contact.png" width="480"></a></p><br><p>当你点击可口可乐<a href="http://www.cocacola.com/" target="_blank" closure_hashcode_="262">Coca-Cola</a>网站上的&ldquo;联系我们&rdquo;链接。显示出来的页面，没有电子邮件，没有电话号码。大部分的链接指向&ldquo;常见问题&rdquo;；反馈表需要您的地址和年龄，还有500个字符的限制；&ldquo;提交一个想法&rdquo;的表单有两页那么长，还包含一大堆条款。看来可口可乐真的不想你与他们联系。</p><br><p>当然，把你的Email地址放到网站上可能会吸引大量的垃圾邮件，这里有几个解决办法。</p><br><p><a href="http://hivelogic.com/enkoder" target="_blank" closure_hashcode_="263">Enkoder</a> 是我最喜欢的把Email放到Web上的解决方案。Enkoder是一个软件，有两个版本，一个是基于Mac平台的，一个是免费的网络应用。它可以<strong>加密你提交的任何Email地址</strong>，生成一串乱七八糟的JavaScript代码，你可以把它放在你的页面上。当网页加载这段代码的时候，你的电子邮件地址就会奇迹般地出现，还是一个<strong>可点击的链接</strong>。抓取EMail地址的爬虫机器人不能读取你的地址，起码计划是这样的。</p><br><p>你还可以用&ldquo;联系表单&rdquo;（contact forms）来避免在网页上显示你的EMail的问题，但是你仍旧会收到一些垃圾邮件，除非你使用一个有效的Captchas，或是其他垃圾邮件保护机制。请记住，像Captchas这样的东西是<strong>用户交互的障碍</strong>，并且可能会降低用户体验。</p><br><p>论坛救援。在线论坛是一个很好的沟通渠道，是一个不错的和用户联系替代方案。一个公开的论坛比一个简单的&ldquo;联系表单&rdquo;或Email更好，因为你的用户在论坛上<strong>可以相互帮助</strong>。即使你不亲自回应用户，其他的用户可能帮助那个人，解决他的问题。</p><br><p><a href="http://www.getsatisfaction.com/" target="_blank" closure_hashcode_="264">GetSatisfaction</a> 是一个Web应用程序，它就像一个论坛，用户可以在板块里张贴自己的问题和反馈，用户或是团队成员都可以回复。用户可以添加评论阐述自己的问题。无论你选择GetSatisfaction的托管解决方案或是运行你自己的留言板，这样双向的沟通渠道是一个与用户保持联系的优秀方法。</p><br><p><a href="http://getsatisfaction.com/apple" target="_blank" closure_hashcode_="265"><img height="590" alt="GetSatisfaction Apple" src="http://iamsure.org/images/usability-problems-solutions/apple2.gif" width="500"></a></p><br><p><em>The <a href="http://getsatisfaction.com/apple" target="_blank" closure_hashcode_="266">GetSatisfaction forum for Apple</a>.</em></p><br><h3>6. 没有办法搜索</h3><br><p>大部分人到达一个页面会立即开始寻找搜索框。也许他们知道自己在寻找什么，并且不想花时间学习这个网站的导航结构。Jakob Nielsen 管这些人叫&ldquo;搜索优势用户&rdquo;。</p><br><blockquote>我们的可用性研究显示，超过一半的用户是&ldquo;搜索优势&rdquo;的，大约五分之一的用户是&ldquo;链接优势&rdquo;的，其余则呈现出混合行为。&ldquo;搜索优势&rdquo;用户通常进入一个网站时直奔搜索按钮，他们对在网站上逛逛没有兴趣；他们是&ldquo;任务中心&rdquo;的，而且想要尽可能快地找到明确的信息。 <a href="http://www.useit.com/alertbox/9707b.html" target="_blank" closure_hashcode_="267">Jakob Nielsen</a></blockquote><br><p>无论您运营的是在线商店还是Blog，你都需要搜索框。人们会来寻找一个特定的产品，或是一篇他们记得的文章，他们想要用一个快速搜索找到它。好消息是，如果你还没有在你的网站上设置搜索，这件事其实很简单。</p><br><p>你不必自己写一个搜索功能，<strong>Google和Yahoo这些搜索引擎已经索引了你网站的大部分页面（如果不是全部的话）</strong>，因此，所有你需要做的就是选择一个，然后把搜索框嵌入到你的网站里。</p><br><pre><br><br><br><br><br></pre><br><p>下面是Yahoo的:</p><br><pre><br><br><br><br><br></pre><br><p>为了让它运转起来，<strong>你需要做的只是把&ldquo;hidden&rdquo;字段的值改成你网站的域名</strong>。这将把Google或是Yahoo的搜索查询范围限制在你的网站内部。你可能还想要修改下提交按钮上的文字，说些你想说的&hellip;&hellip;</p><br><h3>7. 太多的功能需要注册</h3><br><p>你的网站可能有些内容或者功能要求访客注册才能使用。这很好，但是小心有多少内容被藏在了注册流程后面。深度交互的Web应用，例如EMail，文档编辑和项目管理，其100%的功能都只有注册用户才能使用。其他网站，例如社会化新闻网站，不要这么做。我可以浏览<a href="http://www.digg.com/" target="_blank" closure_hashcode_="268">Digg</a>和<a href="http://www.reddit.com/" target="_blank" closure_hashcode_="269">Reddit</a>上所有的故事而不用登录；<strong>用户没必要显示出自己的身份才能享受这些功能</strong>。</p><br><p>当你实现一个登录限制的时候，小心不要把那些不需要用户身份认证的功能也锁起来。一些Blog需要人们注册之后才能发布评论。当然这将大大减少垃圾邮件，<strong>但也同时大大减低了评论数。</strong></p><br><p>你在网站上设置的限制会影响用户的参与行为，消除那些限制，比如注册什么的，几乎肯定会增加用户的参与程度。事实上，<strong>一旦用户开始使用你的网站，他们将更可能注册账号，因为他们其实已经参与进来了</strong>。</p><br><p>&nbsp;</p><br><p><a href="http://www.getsatisfaction.com/" target="_blank" closure_hashcode_="270"><img height="488" alt="GetSatisfaction login" src="http://iamsure.org/images/usability-problems-solutions/getsatisfaction_login.png" width="480"></a></p><br><p>The <a href="http://www.getsatisfaction.com/" target="_blank" closure_hashcode_="271">GetSatisfaction</a>;;; 的交互界面允许你填入你关于一家公司或是一个产品的评论，然后点击&ldquo;发布&rdquo;按钮。之后你看到的却不是你发布的评论信息，而是一个&ldquo;登录或是注册&rdquo;的提示。这很扯，用户可能已经被打击到了&hellip;&hellip;</p><br><p><a href="http://www.pixlr.com/" target="_blank" closure_hashcode_="272"><img height="257" alt="Pixlr" src="http://iamsure.org/images/usability-problems-solutions/pixlr.png" width="480"></a></p><br><p><a href="http://www.pixlr.com/" target="_blank" closure_hashcode_="273">Pixlr</a>是一个在线图片编辑应用，这是Pixlr的到达页面，上面有一个链接名为&ldquo;Jump in n’ get Started!&rdquo;，点击后会打开应用。没有试用，没有注册；你现在就可以开始试用这个应用了。</p><br><p><a href="http://www.posterous.com/" target="_blank" closure_hashcode_="274"><img height="262" alt="Posterous" src="http://iamsure.org/images/usability-problems-solutions/posterous.png" width="480"></a></p><br><p><a href="http://www.posterous.com/" target="_blank" closure_hashcode_="275">Posterous</a>，一个博客托管网络，使用甚至不要求注册。只是发送一封包含你的文章的Email，你的Blog就创建好了。</p><br><h2>8. 老的永久链接指向&ldquo;不存在&rdquo;</h2><br><p>永久链接（Permalink）指一个链接固定指向一个页面，不会被改变；例如，指向一篇博客文章的链接，就像你现在正在读的。<strong>问题出现了，当网站转移到另外一个域，或者结构重组了。</strong>那些指向现有页面的老永久链接可能就断掉了，除非你做了点什么。有种东西叫做301重定向。 301重定向是存在你服务其上的几个指令，它可以把访客重定向到恰当的页面素以，如果谁用老链接访问你的网站，他们将不会看到一个404错误页：<strong>301重定向会把他们转向正确的地方</strong>，只要你设置正确。数字&ldquo;301&rdquo;制定重定向的类型：permanent。</p><br><p><a href="http://fryewiles.com/404" target="_blank" closure_hashcode_="276"><img height="200" alt="Frye Wiles 404 page" src="http://iamsure.org/images/usability-problems-solutions/404.png" width="480"></a></p><br><p><em><a href="http://fryewiles.com/404" target="_blank" closure_hashcode_="277">Frye / Wiles</a> 404 error.</em></p><br><p>有各种不同的办法做301重定向。他们是如何实现部分取决于你使用的Web服务器。这里介绍一下301重定向的基本操作，基于目前最流行的Web服务器，Apache。</p><br><p>下面的代码应该在一个名为&ldquo;<strong>.htaccess</strong>&rdquo;的文件里，这个文件应该在你网站的根目录下。是的，文件以一个英文逗号开始。这意味这是一个系统文件，标准文件浏览器会默认隐藏这种文件。因此，如果你不能用你的文件浏览器或者FTP客户端看到它，去把你的&ldquo;Display invisble files&rdquo;选项勾选上。用你的编辑器创建或者（如果文件已经在那里了）编辑这个文件。每当访客到达你的网站上，这个文件中的重定向规则将会被应用。</p><br><p>下面是些简单的301重定向代码：</p><br><pre><br>RewriteEngine on<br>Redirect 301 /oldpage.html /newpage.html</pre><br><p>这些代码相当简单明了。如果谁想试着进入 &ldquo;yoursite.com/oldpage.html,&rdquo; ，他们会立刻被重定向到&ldquo;yoursite.com/newpage.html.&rdquo; 。顶部的&ldquo;RewriteEngine on&rdquo;是设置mod_rewrite引擎为开启状态（默认是关闭的）。这就是处理重定向的引擎。</p><br><h2>9. 老长老长的注册表单</h2><br><p>注册表单是一砣障碍物。因为填写表单很费劲，并且很无聊。<strong>人们不得不投入时间和精力去注册</strong>，之后还得投入更多的时间和精力去记住他们的用户名和密码！</p><br><p>我们可以降低这种阻碍，通过尽可能缩短注册表单。考虑到所有情况，注册系统的目的仅仅是能够识别每一个用户，所以，伟义的要求就是一个独特的标识（如用户名或是Email地址），还有一个密码。<strong>如果你不需要更多信息，就不要问了。让表单尽可能短。</strong></p><br><p><a href="http://www.readoz.com/" target="_blank" closure_hashcode_="278"><img height="488" alt="ReadOz signup form" src="http://iamsure.org/images/usability-problems-solutions/readoz_signup.png" width="480"></a></p><br><p><a href="http://www.readoz.com/" target="_blank" closure_hashcode_="279">ReadOz</a>的注册表单可长了。仔细研究下，我们发现，一半以上的字段都是可选的。<strong>如果这些是可选的，也就是并不真正需要的。</strong>这种形式可能会让用户看一眼就跑了。只显示那些人们注册时必需填写的，其余的可以以后再说。</p><br><p><a href="http://www.tumblr.com/" target="_blank" closure_hashcode_="280"><img height="325" alt="Tumbler Signup" src="http://iamsure.org/images/usability-problems-solutions/tumblr_signup.png" width="480"></a></p><br><p><em><a href="http://www.tumblr.com/" target="_blank" closure_hashcode_="281">Tumblr</a></em>(已经被墙了)有一个最短的注册表单。只有三块，电子邮件，密码，你新Blog的地址。</p><br><p><a href="http://www.basecamphq.com/signup" target="_blank" closure_hashcode_="282"><img height="286" alt="Basecamp signup" src="http://iamsure.org/images/usability-problems-solutions/basecamp_signup.png" width="480"></a></p><br><p><em><a href="http://www.basecamphq.com/signup" target="_blank" closure_hashcode_="283">Basecamp</a> 的注册页用了一个聪明的伎俩。页面上除了去首页的链接没有其他任何网页导航。这样可以使用户集中在注册过程中，不会受到任何干扰离开页面。</em></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/nono/">nono</a>
+  </div>
+
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+
+<div id="disqus_thread"></div>
+<script>
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//yeahxj.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+  
+</section>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yeahxj.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/collection/">collection</a><small>3</small></li>
+  
+    <li><a href="/categories/dev/">dev</a><small>14</small></li>
+  
+    <li><a href="/categories/media/">media</a><small>9</small></li>
+  
+    <li><a href="/categories/nono/">nono</a><small>32</small></li>
+  
+    <li><a href="/categories/think/">think</a><small>17</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">標籤</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/D2/">D2</a><small>1</small></li>
+  
+    <li><a href="/tags/PJBlog-WP-转换/">PJBlog WP 转换</a><small>1</small></li>
+  
+    <li><a href="/tags/f2e/">f2e</a><small>1</small></li>
+  
+    <li><a href="/tags/前端/">前端</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 Xj Ye
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

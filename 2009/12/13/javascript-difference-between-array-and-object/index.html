@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>javascript区别对象和数组 | 叶行骏</title>
+  <meta name="author" content="Xj Ye">
+  
+  <meta name="description" content="看《Javascript语言精粹》上看到的，挺有意思的，权当记录。
+首先知道，我们的JavaScript中的数据很简洁的。只有 undefined, null, boolean, number,string,object。
+Javascript中认为数组是一个对象，所以直接通过typeof是无法检测">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="javascript区别对象和数组"/>
+  <meta property="og:site_name" content="叶行骏"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="叶行骏" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">叶行骏</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2009-12-12T16:00:00.000Z"><a href="/2009/12/13/javascript-difference-between-array-and-object/">2009-12-13</a></time>
+      
+      
+  
+    <h1 class="title">javascript区别对象和数组</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="http://www.yeahxj.com/wp-content/uploads/javascript-the-good-parts.jpg" target="_blank" rel="external"><img class="size-full wp-image-133" title="javascript-the-good-parts" src="http://www.yeahxj.com/wp-content/uploads/javascript-the-good-parts.jpg" alt="Javascript 语言精粹" width="300" height="400"></a></p>
+<p><strong>看《Javascript语言精粹》上看到的，挺有意思的，权当记录。</strong></p>
+<p>首先知道，我们的JavaScript中的数据很简洁的。只有 undefined, null, boolean, number,string,object。</p>
+<p>Javascript中认为数组是一个对象，所以直接通过typeof是无法检测出是否是Array还是Object的，所以判断两者可以这样做：</p>
+<p><pre lang="javascript" line="1"><br>var isArray = function(value){<br>return value &amp;&amp; typeof value === ‘object’ &amp;&amp; value.constuctor = Array;<br>}</pre><br>但是在检测从不同的敞口（window）或 （frame）里构造的数组会有问题，douglas crockford给出了如下的解决方案：</p>
+<p><pre lang="javascript" line="1"><br>var isArray = function(value){<br>return value &amp;&amp; typeof value === ‘object’ &amp;&amp; typeof value.length === ‘number’ &amp;&amp; typeof value === ‘function’ &amp;&amp; !(value.propertyIsEnumerable(‘length’));<br>}<br></pre><br><strong>所有的建议是如果你想要深入学习一门语言的时候，一定要看权威的著作！</strong></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/dev/">dev</a>
+  </div>
+
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+
+<div id="disqus_thread"></div>
+<script>
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//yeahxj.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+  
+</section>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yeahxj.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/collection/">collection</a><small>3</small></li>
+  
+    <li><a href="/categories/dev/">dev</a><small>14</small></li>
+  
+    <li><a href="/categories/media/">media</a><small>9</small></li>
+  
+    <li><a href="/categories/nono/">nono</a><small>32</small></li>
+  
+    <li><a href="/categories/think/">think</a><small>17</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">標籤</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/D2/">D2</a><small>1</small></li>
+  
+    <li><a href="/tags/PJBlog-WP-转换/">PJBlog WP 转换</a><small>1</small></li>
+  
+    <li><a href="/tags/f2e/">f2e</a><small>1</small></li>
+  
+    <li><a href="/tags/前端/">前端</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 Xj Ye
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

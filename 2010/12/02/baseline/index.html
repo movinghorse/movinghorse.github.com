@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>关于布局中基线对齐的说法 | 叶行骏</title>
+  <meta name="author" content="Xj Ye">
+  
+  <meta name="description" content="这个起源于帮忙解决一个运营页面，这个悲剧啊，页面的布局就是下面这样的。
+
+
+
+yeahxj
+                                                              简单吧，简单不过了，甚至在我们页面中都鄙视这样的布局，但是不从这个角度出发，我们发现">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="关于布局中基线对齐的说法"/>
+  <meta property="og:site_name" content="叶行骏"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="叶行骏" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">叶行骏</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2010-12-01T16:00:00.000Z"><a href="/2010/12/02/baseline/">2010-12-02</a></time>
+      
+      
+  
+    <h1 class="title">关于布局中基线对齐的说法</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>这个起源于帮忙解决一个运营页面，这个悲剧啊，页面的布局就是下面这样的。</p>
+<p><pre lang="html4strict"></pre></p>
+<p><html></html></p>
+<p><head></head></p>
+<p><title>yeahxj</title><br></p>
+<p><body><br>  <table cellpadding="0" cellspacing="0" border="0"><br>    <tr><br>      <td><br>        <img width="728" height="90" src="http://www.d2forum.org/d2/5/assets/img/d2_728x90.jpg"><br>      </td><br>     </tr><br>    <tr><br>      <td><br>        <img width="728" height="90" src="http://www.d2forum.org/d2/5/assets/img/d2_728x90.jpg"><br>      </td><br>     </tr><br>  </table><br></body><br><br><br>简单吧，简单不过了，甚至在我们页面中都鄙视这样的布局，但是不从这个角度出发，我们发现这挺怪异。<br><strong>Firefox，Chrome下挺好，而IE却会在两张图片中间出来一条白色的间隙。</strong><br>我明明设置了cellpadding=”0” cellspacing=”0” border=”0”，奇怪了…<br>网上查完，解决方法有二：</p>
+<ol>
+<li>td img {display: block;}</li>
+<li>td img {vertical-align: bottom;}</li>
+</ol>
+<p>可是这是为什么呢？为什么这样设置就了可以了，这两个方法不就是把元素从inline变成了block，改变了垂直对其方式。<br>后来慢慢baidu，baidu不行Google…发现vertical-align默认值是baseline。以此引出一个概念：<br><strong>基线对齐</strong><br><strong>所谓基线对齐，就是各种inline元素都保持其基线与其父元素的基线是对齐的。例如如果有图片的话，则图片的底端也会贴着父元素的基线。</strong><br>基线这个东西还要从文字设计开始讲起，MD，这博客要写到神马时候啊。还是看代码吧。</p>
+<p><pre lang="html4strict"></pre></p>
+<p><html></html></p>
+<p><head></head></p>
+<p><title>yeahxj</title><br></p>
+<p><body><br>  <table cellpadding="0" cellspacing="0" border="0"><br>    <tr><br>      <td><br>        aAg<img width="728" height="90" src="http://www.d2forum.org/d2/5/assets/img/d2_728x90.jpg"><br>      </td><br>     </tr><br>    <tr><br>      <td><br>        Aga<img width="728" height="90" src="http://www.d2forum.org/d2/5/assets/img/d2_728x90.jpg"><br>      </td><br>     </tr><br>  </table><br></body><br><br><br>仔细看仔细看，看到没看到没，其实图片是和a这个字母的下沿对齐的，小时候学字母的时候就会有这条线，不过也有些小写的字母如gg是会超出基线的。所有大写字母都是底部基线对其的。<br>这大部分已经说到了上面的问题，既然有基线对齐这回事情，那vertical-align必然和这个相关，一看vertical-align的值：baseline sub supper top text-top bottom text-bottom middle以及各种长度值（%，em，ex等等）MD，这博客要写到神马时候啊。还是自己看代码吧。</p>
+<p>最后：其实非常多有关布局的情况都是和这个有关，写的不够系统，望有高人指点。欢迎参加D2。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/dev/">dev</a>
+  </div>
+
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+
+<div id="disqus_thread"></div>
+<script>
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//yeahxj.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+  
+</section>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yeahxj.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/collection/">collection</a><small>3</small></li>
+  
+    <li><a href="/categories/dev/">dev</a><small>14</small></li>
+  
+    <li><a href="/categories/media/">media</a><small>9</small></li>
+  
+    <li><a href="/categories/nono/">nono</a><small>32</small></li>
+  
+    <li><a href="/categories/think/">think</a><small>17</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">標籤</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/D2/">D2</a><small>1</small></li>
+  
+    <li><a href="/tags/PJBlog-WP-转换/">PJBlog WP 转换</a><small>1</small></li>
+  
+    <li><a href="/tags/f2e/">f2e</a><small>1</small></li>
+  
+    <li><a href="/tags/前端/">前端</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 Xj Ye
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
